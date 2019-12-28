@@ -1,0 +1,22 @@
+{
+  "name": "nextword",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alyaxey Yaskevich",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "d3": "^5.14.2",
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^0.20.0",
+    "jquery": "^3.4.1",
+    "node-fetch": "^2.6.0",
+    "popper.js": "^1.16.0",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
