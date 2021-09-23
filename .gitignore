@@ -1,4 +1,5 @@
 # environment stuff
+package-lock.json
 .env
 ud-env
 
