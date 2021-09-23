@@ -1,6 +1,6 @@
 const express = require('express');
 const fetch = require('node-fetch');
-const proxy = require('http-proxy-middleware');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 const app = express();
 app.use(express.static('public'));
 
@@ -8,7 +8,7 @@ const prxopts =   { pathRewrite: {'^/api' : ''}, target: 'http://localhost:5000/
 					changeOrigin: false, "secure": false 
 				  };
 
-app.use('/api', proxy(prxopts));
+app.use('/api', createProxyMiddleware(prxopts));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use(express.static(__dirname + '/node_modules/jquery/dist'));
 app.use(express.static(__dirname + '/node_modules/d3/dist'));
